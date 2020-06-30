@@ -13,9 +13,9 @@ object get_spark {
       .setAppName(appName)
       .setMaster("local[3]")
 
-    val sc = new SparkContext(sparkConf)
+//    val sc = new SparkContext(sparkConf)
     val spark = SparkSession.builder().config(sparkConf).getOrCreate()
-
+    val sc = spark.sparkContext
 
     println( "---------------------------------------------------------------------------------------------------------------------------------------------")
     log.warn(" Yarn application id is: " + spark.sparkContext.applicationId)
