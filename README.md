@@ -13,6 +13,6 @@ The idea is to give a demo for following features
 ## Note
 ```bash
  scalaVersion: 2.11.8
- spark: 2.0.1
+ sparkVersion: 2.0.1
  build: sbt
 ```
