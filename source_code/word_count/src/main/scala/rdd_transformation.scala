@@ -4,6 +4,14 @@ import org.apache.spark.SparkContext
 object rdd_transformation {
 
   def startProcessing(sc :SparkContext, params: args_check.CommandLineArgs): Unit ={
+
+    /**
+     * read csv file using SparkContext
+     * Apply some transformation to get the word count
+     * if SpecificWord is passed then apply logic to display only the details of it
+     * else
+     * display top n words and their count
+     */
     val lines = sc.textFile(params.inCSVpath)
     val wordRdd = lines.flatMap(line => line.split(params.csvDelimiter))
 
