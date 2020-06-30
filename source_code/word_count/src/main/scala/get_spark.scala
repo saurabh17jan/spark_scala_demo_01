@@ -18,8 +18,8 @@ object get_spark {
     val sc = spark.sparkContext
 
     println( "---------------------------------------------------------------------------------------------------------------------------------------------")
-    log.warn(" Yarn application id is: " + spark.sparkContext.applicationId)
-    println( " Yarn application id for ('"+ spark.sparkContext.appName +"') is: " + spark.sparkContext.applicationId)
+    log.warn(" Your application id is: " + spark.sparkContext.applicationId)
+    println( " Your application id for ('"+ spark.sparkContext.appName +"') is: " + spark.sparkContext.applicationId)
     println( "---------------------------------------------------------------------------------------------------------------------------------------------")
 
     (sc,spark)
