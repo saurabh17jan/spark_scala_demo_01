@@ -6,8 +6,6 @@ The idea is to give a demo for following features
 
 * Perform Spark Dataframe Transformation
 * Perform Word Count for a CSV file to demo RDD feature
-* Parse CLI args
-* Demo logging feature
 
 ## Note
 ```bash
