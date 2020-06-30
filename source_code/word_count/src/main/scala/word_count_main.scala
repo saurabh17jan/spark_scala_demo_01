@@ -9,11 +9,11 @@ object word_count_main {
   def main(args: Array[String]): Unit = {
 
 
-    log.warn(" Parsing CLI args ! ")
+    log.info(" Parse CLI args ! ")
     val params = args_check.configRead(args)
 
-    val transform_df = perform_transformation.getGoing(params,log)
+    log.info(" Start transformation ! ")
+    perform_transformation.getGoing(params,log)
 
-//    val trdf = get_spark.main(args)
   }
 }
