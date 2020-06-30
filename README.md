@@ -8,7 +8,6 @@ The idea is to give a demo for following features
 * Perform Word Count for a CSV file to demo RDD feature
 * Parse CLI args
 * Demo logging feature
-* Demo UDF feature
 
 ## Note
 ```bash
