@@ -12,10 +12,10 @@ object perform_transformation {
     log.warn(" Initialising SparkSession ! ")
     val (sc, spark) = get_spark.start_spark(log, params.appName)
 
-    log.warn(" Start processing as a dataframe !")
+    log.info(" Start processing as a dataframe !")
     df_transformation.startProcessing(spark,params)
 
-    log.warn(" Start processing as RDD !")
+    log.info(" Start processing as RDD !")
     rdd_transformation.startProcessing(sc, params)
 
 
