@@ -28,3 +28,13 @@ libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.0.1"
 libraryDependencies += "org.apache.spark" % "spark-sql_2.11" % "2.0.1"
 libraryDependencies += "org.apache.spark" % "spark-hive_2.11" % "2.0.1"
 libraryDependencies += "com.typesafe" % "config" % "1.3.1"
+
+/**
+ *
+ * to use ScalaTest we need to set this dependency
+ *
+ * // https://mvnrepository.com/artifact/org.scalatest/scalatest
+ * libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.2" % Test
+ *
+ */
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.0" % "test"
