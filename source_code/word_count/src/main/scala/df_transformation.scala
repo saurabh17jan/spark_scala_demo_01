@@ -4,7 +4,7 @@ import org.apache.spark.sql.types.{DateType, IntegerType, StringType, StructFiel
 import org.apache.spark.sql.SparkSession
 object df_transformation {
 
-  def startProcessing(spark : SparkSession, params: args_check.CommandLineArgs): Unit ={
+  def startProcessing(spark : SparkSession, params: args_check.CommandLineArgs) = {
     /**
      * create csv Schema
      */
@@ -46,6 +46,8 @@ object df_transformation {
       .sum("sal")
       .orderBy(asc("job"), desc("sum(sal)"))
       .show()
+
+    df
 
   }
 }
